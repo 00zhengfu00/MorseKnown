@@ -19,8 +19,10 @@ ___________________
 ###使用到的开源软件
 Android  suport  v7 21+  
 android  support design 23+
+###下载试用
+[版本1.0] (http://shouji.baidu.com/software/9499760.html)
 
-
+[版本2.0] (http://android.myapp.com/myapp/detail.htm?apkName=usst.knowmorse)
 ###其它
 如果还有其他疑问，可以给我发邮件
 mail:1063994955@qq.com
