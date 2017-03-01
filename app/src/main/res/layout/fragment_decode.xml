@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="usst.knowmorse.fragment.DecodeFragment" android:background="@color/transparent">
+
+
+    <SurfaceView android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        >
+    </SurfaceView>
+    <usst.knowmorse.morsecode.FocusArea
+        android:id="@+id/sv_focus"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_below="@+id/preview"
+        android:layout_marginLeft="@dimen/edit_text_margin_sides"
+        android:layout_marginRight="@dimen/edit_text_margin_sides">
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="@dimen/input_text_title_height"
+            android:text="@string/text_header_output_morse"
+            android:id="@+id/title"
+            android:textColor="@color/text"
+            android:background="@drawable/rounded_box2"
+            android:layout_marginTop="@dimen/edit_text_title_margin_top"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="@dimen/edit_text_margin_sides"
+            android:layout_alignParentLeft="false"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:id="@+id/morse_input" android:background="@drawable/rounded_box"
+                  android:textColor="@color/text" android:gravity="center"
+                  android:layout_centerHorizontal="true"
+                  android:textSize="20dp"
+                  android:scrollbars="vertical"
+                  android:fadeScrollbars="false"
+                  android:layout_below="@+id/title" android:layout_weight="2"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/OnOffState_out" android:background="@drawable/rounded_box"
+            android:textColor="@color/text" android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="10dp"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_below="@+id/title" android:layout_weight="2"/>
+        <TextView
+            android:layout_width="@dimen/edit_text_title_width"
+            android:layout_height="@dimen/input_text_title_height"
+            android:text="@string/text_header_to_string"
+            android:id="@+id/tostringtitle"
+            android:textColor="@color/text"
+            android:background="@drawable/rounded_box2"
+            android:layout_marginTop="@dimen/edit_text_title_margin_top"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="-3dp"
+            android:layout_marginLeft="@dimen/edit_text_margin_sides"
+            android:layout_alignParentLeft="false"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_output" android:background="@drawable/rounded_box"
+            android:layout_alignLeft="@+id/morse_input"
+            android:layout_alignRight="@+id/morse_input"
+            android:layout_below="@+id/morse_input"
+            android:layout_above="@+id/morse_input_buttons_primary"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/text_bold"
+            android:textSize="@dimen/output_text_size"
+            android:textIsSelectable="true"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+
+   <!-- <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/morse_input_buttons"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/morse_input_buttons_secondary"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:background="@color/fill"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Word"
+                android:id="@+id/nextWordButton"
+                android:textSize="12dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:id="@+id/delete"
+                android:textSize="12dp"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/morse_input_buttons_primary"
+            android:gravity="center"
+            android:layout_above="@+id/morse_input_buttons_secondary"
+            android:layout_centerHorizontal="true" android:clickable="false"
+            android:background="@color/fill" android:layout_marginBottom="4dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dot"
+                android:id="@+id/dotButton"
+                android:textSize="16sp"
+                android:layout_marginRight="4dp"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:id="@+id/nextCharacterButton"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:background="@drawable/button"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dash"
+                android:id="@+id/dashButton"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+
+</RelativeLayout>

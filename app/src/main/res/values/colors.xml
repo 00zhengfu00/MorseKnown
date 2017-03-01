@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="fill">#f7f9f7</color>
+	<color name="dull">#96b597</color>
+	<color name="bold">#F0E68C</color>
+
+	<color name="text">#454745</color>
+	<color name="text_light">@color/fill</color>
+	<color name="titleWhite">#FFFFFF</color>
+	<color name="text_bold">#000000</color>
+	<color name="text_white">#FFFFFF</color>
+	<color name="titleBlue">#5F9EA0</color><!--天兰色 -->
+	<color name="transparent">#00000000</color>
+	<color name="titleVenetianRed">#B81B30</color><!--上理威尼斯红-->
+</resources>

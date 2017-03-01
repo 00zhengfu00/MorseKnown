@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/titleWhite"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="20dp"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="25.0dp"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:background="@drawable/rounded_box"
+        android:paddingTop="10.0dip" >
+        <!--android:background="@drawable/rounded_box"-->
+        <RelativeLayout
+            android:id="@+id/top_relative"
+            android:layout_width="fill_parent"
+            android:background="@drawable/rounded_box"
+            android:layout_height="60.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:paddingLeft="4.0dip"
+                android:text="@string/conf_morseTextView"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="@string/threshold_brightness"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+
+
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:id="@+id/con_brightness"
+                android:selectAllOnFocus="true"
+                android:lines="1"
+                android:textColor="#ff888888"
+                android:inputType="numberDecimal"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="fill_horizontal">
+            </EditText>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dp"
+                android:id="@+id/get_brightness"
+                android:textColor="#ff888888"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="@string/threshold_dot"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/con_dot"
+                android:selectAllOnFocus="true"
+                android:lines="1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ff888888"
+                android:inputType="numberDecimal"
+                android:layout_width="150dp"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="fill_horizontal">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+               android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="单位：ms"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="4.0dip"
+            android:text="@string/threshold_letters"
+            android:textColor="#ff888888"
+            android:textSize="12.0sp" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/con_leters"
+                android:selectAllOnFocus="true"
+                android:lines="1"
+                android:textColor="#ff888888"
+                android:inputType="numberDecimal"
+                android:layout_width="150dp"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="fill_horizontal">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="单位：ms"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="@string/threshold_words"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/conf_words"
+                android:selectAllOnFocus="true"
+                android:lines="1"
+                android:textColor="#ff888888"
+                android:inputType="numberDecimal"
+                android:layout_width="150dp"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="fill_horizontal">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="单位：ms"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/btn_ThresholdSet"
+                android:text="@string/threshold_set"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:background="@drawable/button"
+                android:textSize="16.0sp"
+                android:layout_height="42dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:background="@drawable/rounded_box"
+        android:paddingTop="10.0dip" >
+        <!--android:background="@drawable/rounded_box"-->
+        <RelativeLayout
+            android:id="@+id/bottom_relative"
+            android:layout_width="fill_parent"
+            android:background="@drawable/rounded_box"
+            android:layout_height="60.0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:paddingLeft="4.0dip"
+                android:text="@string/conf_tomorseTextView"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="@string/speed"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/conf_Speed"
+                android:selectAllOnFocus="true"
+                android:lines="1"
+                android:text="250"
+                android:textColor="#ff888888"
+                android:inputType="numberDecimal"
+                android:layout_width="150dp"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="fill_horizontal">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="单位：ms"
+                android:textColor="#ff888888"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <CheckBox
+                    android:id="@+id/auto_th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/auto_threshold"
+                    ></CheckBox>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/send_ThresholdSet"
+                android:text="@string/send_set"
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:background="@drawable/button"
+                android:textSize="16.0sp"
+                android:layout_height="42dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

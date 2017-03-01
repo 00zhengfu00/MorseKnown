@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".MainActivity" android:background="@color/fill">
+
+    <!--Programmatically setting the indicator doesn't always work for some reason on all devices (such as my Moto G), and as such we set it though XML just to be safe.-->
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titleVenetianRed"
+
+        app:tabIndicatorColor="@color/titleBlue"
+        app:tabIndicatorHeight="5dp"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/text_white"
+        app:tabSelectedTextColor="@color/bold"
+        app:tabGravity="fill"
+        android:id="@+id/tab_layout">
+	</android.support.design.widget.TabLayout>
+
+	<!--<RelativeLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="128dp"
+		android:layout_below="@+id/tab_layout"
+        android:id="@+id/view_pager_underlay"
+		android:background="@color/fill">
+
+	</RelativeLayout>-->
+	<android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_pager"
+        android:layout_below="@+id/tab_layout"/>
+</RelativeLayout>

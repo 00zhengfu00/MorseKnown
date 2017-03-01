@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Know Morse</string>
+    <string name="text_header_input_morse">ToMorse</string>
+    <string name="text_header_input_text">Text</string>
+    <string name ="text_header_to_string">ToString</string>
+    <string name="text_header_output_text">Text</string>
+    <string name="text_header_output_morse">indentifyMorse</string>
+
+    <string name="title">know morse</string>
+    <string name="threshold_set">save param</string>
+    <string name="threshold_dot">dot threshold</string>
+    <string name="threshold_letters">char threshold</string>
+    <string name="threshold_words">words threshold</string>
+    <string name="threshold_brightness">brightness threshold</string>
+    <string name="conf_morseTextView">para config</string>
+
+</resources>
