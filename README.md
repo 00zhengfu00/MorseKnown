@@ -28,6 +28,7 @@ How to  Build
 -
 Android  suport  v7 21+  
 android  support design 23+
+
 下载试用
 -
 [版本1.0] (http://shouji.baidu.com/software/9499760.html)
